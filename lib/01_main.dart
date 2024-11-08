@@ -1,15 +1,40 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
-import './third_screen.dart';
+import 'package:hotels_clients_app/02_second_screen.dart';
 import 'styles.dart';
 
-class SecondScreen extends StatefulWidget {
-  const SecondScreen({super.key});
-
-  @override
-  State<SecondScreen> createState() => _SecondScreenState();
+void main() {
+  runApp(const HotelsClientsApp());
 }
 
-class _SecondScreenState extends State<SecondScreen> {
+class HotelsClientsApp extends StatelessWidget {
+  const HotelsClientsApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    const primaryColor = Color(0xfff82b10);
+    return MaterialApp(
+      title: 'Hotels_Clients_App',
+      theme: ThemeData(
+        primaryColor: primaryColor,
+        scaffoldBackgroundColor: const Color(0xffeff1f3),
+        colorScheme: ColorScheme.fromSeed(seedColor: primaryColor),
+        useMaterial3: true,
+      ),
+      home: const FirstScreen(),
+    );
+  }
+}
+
+class FirstScreen extends StatefulWidget {
+  const FirstScreen({super.key});
+
+  @override
+  State<FirstScreen> createState() => _FirstScreenState();
+}
+
+class _FirstScreenState extends State<FirstScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,9 +45,9 @@ class _SecondScreenState extends State<SecondScreen> {
             const SizedBox(height: 102),
             Image.asset('assets/images/logo.png'),
             const SizedBox(height: 60),
-            Image.asset('assets/images/imagesecond.png'),
+            Image.asset('assets/images/imagefirst.png'),
             const SizedBox(height: 102),
-            const TitleSecond(),
+            const TitleFirst(),
             const SizedBox(height: 102),
             const Button()
           ],
@@ -32,15 +57,15 @@ class _SecondScreenState extends State<SecondScreen> {
   }
 }
 
-class TitleSecond extends StatelessWidget {
-  const TitleSecond({super.key});
+class TitleFirst extends StatelessWidget {
+  const TitleFirst({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const SizedBox(
       width: 297,
       child: Text(
-        'Оплачивайте прямо в приложении',
+        'Заказывайте услуги отеля из любого места онлайн',
         textAlign: TextAlign.center,
         softWrap: true,
         style: commonTextStyle,
@@ -69,12 +94,9 @@ class _ButtonState extends State<Button> {
                 borderRadius: BorderRadius.all(Radius.circular(15))))),
         onPressed: () {
           Navigator.push(context,
-              MaterialPageRoute(builder: (context) => const ThirdScreen()));
+              MaterialPageRoute(builder: (context) => const SecondScreen()));
         },
-        child: const Text(
-          'Хорошо',
-          style: buttonTextStyle,
-        ),
+        child: const Text('Понятно', style: buttonTextStyle),
       ),
     );
   }
