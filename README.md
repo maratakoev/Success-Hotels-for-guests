@@ -1,16 +1,24 @@
-# hotels_clients_app
+# HotelsApp for Clients
+Flutter-приложение для клиентов отелей, позволяющее регистрироваться, авторизоваться, выбирать отель, номер а также заказывать, оплачивать различные услуги отеля в приложении.
 
-A new Flutter project.
+## Основные функции
+Регистрация и авторизация пользователей.
+Возможна авторизация по QR-коду.
+Возможность заказывать и оплачивать услуги отеля прямо в приложении.
 
-## Getting Started
+## Использованные технологии
+Flutter
+Dart
+Dio (для выполнения HTTP-запросов)
+flutter_secure_storage (для безопасного хранения токенов)
+DropDownButton_package (выпадающий список)
+SreenShots/Регистрация в приложении.png
 
-This project is a starting point for a Flutter application.
+## Установка и запуск
+Клонируйте репозиторий: https://github.com/maratakoev/Success-Hotels-for-guests.git
+Установите зависимости Cocoapods
+Установите пакеты из файла Pubspec.yaml
 
-A few resources to get you started if this is your first Flutter project:
+## Скриншоты
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
