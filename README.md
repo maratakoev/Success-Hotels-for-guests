@@ -13,6 +13,8 @@ Dio (для выполнения HTTP-запросов)
 flutter_secure_storage (для безопасного хранения токенов)
 DropDownButton_package (выпадающий список)
 SreenShots/Регистрация в приложении.png
+QRcodescanner
+
 
 ## Установка и запуск
 Клонируйте репозиторий: https://github.com/maratakoev/Success-Hotels-for-guests.git
@@ -20,5 +22,14 @@ SreenShots/Регистрация в приложении.png
 Установите пакеты из файла Pubspec.yaml
 
 ## Скриншоты
+SreenShots/Регистрация в приложении.png
+SreenShots/Вход в личный кабинет.png
+Заселение в гостиницу и номер.png
+SreenShots/Заказанные услуги.png
+SreenShots/Услуги отеля.png
+SreenShots/Личный кабинет.png
+
+
+
 
 
