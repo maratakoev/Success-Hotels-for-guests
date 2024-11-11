@@ -46,7 +46,7 @@ class Organization {
   }
 }
 
-//модель ответа
+// Модель ответа
 class OrganizationResponse {
   final bool success;
   final List<Organization> organizations;

@@ -1,5 +1,5 @@
-import 'package:hotels_clients_app/auth_screen_second.dart';
-import 'package:hotels_clients_app/reg_form.dart';
+import 'package:hotels_clients_app/06_auth_screen_second.dart';
+import 'package:hotels_clients_app/04_reg_form.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'styles.dart';

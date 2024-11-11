@@ -1,4 +1,4 @@
-import './auth_screen_second.dart';
+import '06_auth_screen_second.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 import 'styles.dart';
@@ -22,6 +22,9 @@ class _BarcodeScannerSimpleState extends State<BarcodeScannerSimple> {
       });
 
       if (_barcode != null) {
+        print(
+            'Считанное значение QR-кода: ${_barcode!.rawValue}'); // Добавлено для вывода в консоль
+
         // Изменяем цвет углов
         Future.delayed(const Duration(seconds: 2), () {
           if (mounted) {

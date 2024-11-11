@@ -1,5 +1,7 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
-import 'reg_form.dart';
+import '04_reg_form.dart';
 import 'styles.dart';
 
 class ThirdScreen extends StatefulWidget {
@@ -74,8 +76,12 @@ class _ButtonState extends State<Button> {
           ),
         ),
         onPressed: () {
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => const RegForm()));
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const RegForm(),
+            ),
+          );
         },
         child: const Text(
           'Поехали',
